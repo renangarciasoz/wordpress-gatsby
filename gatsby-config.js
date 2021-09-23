@@ -8,6 +8,10 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         url: "https://farinelliwebimoveis.com.br/graphql",
+        schema: {
+          perPage: 20, 
+          timeout: 99999999,
+        },
       },
     },
     "gatsby-plugin-styled-components",
